@@ -1,0 +1,58 @@
+@import 'vars';
+
+.app-card {
+  display: flex;
+
+  .app-card__column-left {
+    flex-grow: 1;
+
+    .app-card__link {
+      color: $primary_text;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 1.4rem;
+      line-height: 1rem;
+    }
+
+    .app-card__domain {
+      color: $secondary_text;
+    }
+
+    .app-card__points {
+      background-color: $accent_color;
+      border: none;
+      color: $text_icon_color;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 150px;
+      border-radius: 20px;
+      padding: 3px;
+    }
+
+    .app-card__user {
+      color: $primary_text;
+      font-weight: bolder;
+    }
+  }
+
+  .app-card__column-right {
+    padding: 2.5rem;
+
+    .app-card__comments_count {
+      background: url('../../../assets/chat-count.svg') no-repeat;
+      background-size: contain;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+    }
+
+    .app-card__comments_number {
+      position: relative;
+      top: 0.1rem;
+    }
+  }
+}
